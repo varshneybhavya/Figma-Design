@@ -211,15 +211,15 @@ body{
   }
 
   .bu {
-    flex-direction: column;
-    width: 100%;
+    display: contents;
+    width: 80%;
     height: auto;
     gap: 10px;
   }
 
   .bu input,
   .bu button {
-    width: 90%;
+    width: 70%;
   }
 
   .footer {

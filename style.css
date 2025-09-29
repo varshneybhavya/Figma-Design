@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+.header{
+     display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 6px 50px;
+   position: sticky;
+   top: 0;
+   left: 0;
+  z-index: 1000;
+  width: 95%;
+   background-color: white; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.list{
+    display: flex;
+    gap: 30px;
+      list-style-type: none
+    
+}
+.login{
+    background-color: white;
+    border: none;
+}
+.create{
+    background-color: black;
+    padding: 10px 15px;
+    color: aliceblue;
+    border-radius: 10px;
+    border: none;
+}
+.header1{
+    background-color: rgba(128, 128, 128, 0.062);
+    align-items: center;
+    text-align: center;
+    padding: 6px 20px;
+         /* Removes bottom margin of h1 */
+
+
+}
+.list1{
+    color:grey;
+    padding-left:40px ;
+}
+.list1 img{
+     margin-top: -30px;   
+}
+.main{
+    display: flex;
+    gap:30px;
+    padding: 6px 45px ;
+
+}
+.book{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 0;
+    height: 50px;
+}
+.left{
+     width: 50%; 
+}
+.right{
+    width: 50%;
+    overflow-wrap: anywhere;
+}
+.image{
+    width: 100%;
+    padding-left: 40px;
+}
+.emai{
+    margin-top: 50px;
+    width: 95%;
+    margin-left: 30px;
+    background: linear-gradient(to bottom,#030212,#353441);
+    color: aliceblue;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    height: 300px;
+       padding: 53px 20px 5px 5px;
+       display: flex;
+       flex-direction: column;
+       gap:10px;
+
+}
+.bu{
+    width: 40%;
+    height: 50px;
+    background-color: #353441;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+        margin-top: 21px;
+
+}
+.bu input{
+       height: 41px;
+    width: 350px;
+    background-color:#353441 ;
+    padding: 0px 29px;
+    border: none;
+    border-radius: 5px;
+}
+.bu button{
+        background-color: red;
+    padding: 10px;
+    padding: 17px 28px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px 30px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .bu {
+    width: 80%;
+  }
+
+  .bu input {
+    width: 60%;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .button {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header1{
+    width: 100%;
+  }
+
+  .header1 h1 {
+    font-size: 20px;
+  }
+
+  .header1 h4 {
+    font-size: 14px;
+  }
+
+  .list1 {
+    padding-left: 20px;
+  }
+
+  .main {
+    padding: 40px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .book {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .image {
+    padding-left: 20px;
+  }
+  .email input{
+     width: 40px;
+  }
+
+  .bu {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+
+  .bu input,
+  .bu button {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .footer .li,
+  .footer .li1,
+  .footer .social {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
